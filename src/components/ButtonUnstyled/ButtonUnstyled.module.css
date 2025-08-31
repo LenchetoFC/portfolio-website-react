@@ -1,0 +1,21 @@
+.unstyled {
+  background: transparent;
+  width: fit-content;
+  padding: 4px 8px;
+  border: none;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+
+  &:active {
+    filter: revert;
+  }
+}

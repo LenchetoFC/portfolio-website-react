@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
+
+import ButtonUnstyled from "@/components/ButtonUnstyled";
 
 export default function Home() {
   return (
@@ -19,6 +23,14 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
+
+        <ButtonUnstyled
+          onClick={() => {
+            console.log("Clicked");
+          }}
+        >
+          Button
+        </ButtonUnstyled>
 
         <div className={styles.ctas}>
           <a
